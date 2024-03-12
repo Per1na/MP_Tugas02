@@ -42,18 +42,19 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     ) {
         Box(
             modifier = Modifier
-                .fillMaxSize(),
-               contentAlignment = Alignment.Center
+                .fillMaxSize()
+                .background(color = MaterialTheme.colorScheme.primary),
+            contentAlignment = Alignment.Center
         ) {
-        Text(
-            text = "Halo $name! How are you ?",
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
-            textAlign = TextAlign.Center,
-        )
-      }
+            Text(
+                text = "Halo $name! How are you ?",
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center,
+            )
+        }
     }
-  }
+}
 
 
 @Preview(showBackground = true)
