@@ -43,7 +43,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .background(color = MaterialTheme.colorScheme.primary),
+                ,
             contentAlignment = Alignment.Center
         ) {
             Text(
